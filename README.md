@@ -37,14 +37,16 @@ Additional analysis can determine whether using estimated or non-estimated KIBA 
 ## Potential Next Steps to Improve Performance
 Feature Engineering
 - Incorporate additional features such as Kd, Ki, and IC50 scores.
+
 Enhanced Embeddings
-Experiment with more informative embeddings, such as:
-- PubChem10M_SMILES_BERT
-- DeepChem
-- AlphaFold embeddings
-- ProtTrans
+- Experiment with more informative embeddings, such as:
+    - PubChem10M_SMILES_BERT
+    - DeepChem
+    - AlphaFold embeddings
+    - ProtTrans
 ## Explore Advanced Models
 Implement deep learning techniques, including:
 - Graph Neural Networks (GNNs) for representing molecular and protein structures.
 - End-to-end models for drug-target binding prediction, such as DeepAffinity.
+
 By incorporating these strategies, the model's performance can likely be enhanced, leading to more robust predictions.
