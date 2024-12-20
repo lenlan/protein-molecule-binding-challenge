@@ -29,15 +29,22 @@ LGBM model gets trained on 80% of the data and performs as follows on the held o
 A new test set can be loaded and predictions can be made using the trained model.
 
 # Conclusion and Remarks:
-An R^2 Score of 0.177 is pretty low but it does show the model is learning something. Further steps can be taken to improve the performance.
+An R² score of 0.177 is relatively low but indicates that the model is capturing some signal from the data. Further optimization and exploration are necessary to improve performance.
 
-Notes:
-Cross-validation should be performed to validate this performance.<br>
-More work can be done in examining whether training on estimated or non-estimated kiba scores makes a difference
-
-Potential next steps to improve performance:
-- Add Kd, Ki, and IC50 scores as features
-- Use more sophisticated embbeddings which contain more information (e.g., PubChem10M_SMILES_BERT, DeepChem, AlphaFold embeddings, or ProtTrans)
-- Use other drug-target binding affinity prediction tools:
-    - Deep Learning with Graph Neural Networks (GNNs)
-    - End-to-End Models for Binding Affinity (e.g., DeepAffinity)
+## Notes
+Cross-validation should be conducted to validate and generalize this performance.
+Additional analysis can determine whether using estimated or non-estimated KIBA scores impacts the model's performance.
+## Potential Next Steps to Improve Performance
+Feature Engineering
+- Incorporate additional features such as Kd, Ki, and IC50 scores.
+Enhanced Embeddings
+Experiment with more informative embeddings, such as:
+- PubChem10M_SMILES_BERT
+- DeepChem
+- AlphaFold embeddings
+- ProtTrans
+## Explore Advanced Models
+Implement deep learning techniques, including:
+- Graph Neural Networks (GNNs) for representing molecular and protein structures.
+- End-to-end models for drug-target binding prediction, such as DeepAffinity.
+By incorporating these strategies, the model's performance can likely be enhanced, leading to more robust predictions.
